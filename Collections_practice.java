@@ -1,5 +1,6 @@
 package Framework;
 
+import java.awt.Frame;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -9,10 +10,11 @@ public class Collections_practice {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		String[]s = {"roop","paul","String"};
+		
+		
 		Set<String > set = new HashSet<String>();
-		set.add("roop");
-		set.add("paul");
-		set.add("string");
+		
 		
 		System.out.println(set);
 		
@@ -24,6 +26,12 @@ public class Collections_practice {
 		
 
 	}
+		
+		for(String s1:s) {
+			if(set.add(s1)) {
+				System.out.print(s1+",");
+			}
+		}
 
 }
 }
