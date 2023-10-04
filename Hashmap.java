@@ -18,7 +18,11 @@ public class Hashmap {
 		m.put("China", 20);
 		m.put("india", 40);
 		
+		//hashmap will not implement iterator interface directly as it is having two values(key and set) which has to be 
+		//applied in set first and tgen iterate it 
+		
 		Set s = m.entrySet();
+		
 		
 		Iterator i = s.iterator();
 		
